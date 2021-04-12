@@ -131,3 +131,11 @@ console.log(text); // 暂无
 ```
 
 <font style="color:#dd0000">~ ~</font>  双非运算符可以用于向下取整。 console.log(~~4.3) // 4
+
+### 判断是否为空
+
+```js
+ if(str != null && typeof(str) != undefined && str !=''){
+    console.log(str + ' 不为空');
+ }
+```
