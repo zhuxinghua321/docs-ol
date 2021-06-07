@@ -15,3 +15,10 @@
   text-overflow:ellipsis;
   white-space: nowrap;
 ```
+
+### flex布局，flex布局中剩下的一部分空间给有flex1的元素
+```css
+.flex1 {
+          flex: 1 !important;
+        }
+```

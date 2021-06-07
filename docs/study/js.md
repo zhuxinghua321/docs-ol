@@ -85,7 +85,7 @@ console.log(list); // ["蛙人", 3]
 
 ```js
 let nums = [1,22,31,4,56]
-let sum = nums.reduce((prev, cur) => prev + cur, 0
+let sum = nums.reduce((prev, cur) => prev + cur)
 ```
 
 数组去重 <font style="color:#dd0000">set</font> es6 利用 new Set 的集合有序列表，不能有重复
@@ -100,7 +100,15 @@ arrNew.delete(); //删除
 arrNew.clear(); //清空
 ```
 
-数
+数组与字符串的互相转换
+
+```js
+  let arr = [1,2,3,4];
+  arr.join(',')  //返回 '1,2,3,4' 数组转为字符串以 , 拼接
+
+  let str = '1,2,3,4';
+  str.split(',') //返回 [1,2,3,4] 字符串转为数组以 , 分割
+```
 
 ### 对象技巧
 

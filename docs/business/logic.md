@@ -31,5 +31,24 @@ handleAfterDay () {
       };
     },
 ```
+### 定时器，轮询机制
+```js
+   index: 0, //记录定时器次数
+   timer: null, //定时器
+
+  //  3秒一次，执行10次
+  checkStatus () {
+      if (this.index < 10) {
+        if (this.index === 0) {
+          // 立即执行一次
+          this.timer = setInterval(() => { this.checkStatus() }, 3000) //开启
+        }
+        this.index++;
+      } else {
+        clearInterval(this.timer); //清除定时器
+        this.index = 0; 
+      }
+    },
+```
 
 ### Vuex
