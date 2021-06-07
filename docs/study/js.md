@@ -100,6 +100,8 @@ arrNew.delete(); //删除
 arrNew.clear(); //清空
 ```
 
+数
+
 ### 对象技巧
 
 获取对象的 <font style="color:#dd0000">key -> ``Object.keys(obj)`` </font> 和 <font style="color:#dd0000">值 -> ``Object.values(obj)`` </font>
