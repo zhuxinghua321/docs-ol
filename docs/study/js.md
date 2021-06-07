@@ -1,19 +1,18 @@
 ### 判断多值匹配
 
 ```js
-if (value === 1 || value === 2 || value === 3) {
-}
-// 简写1
-if ([1, 2, 3].indexOf(value) >= 0) {
-}
-//简写2
-let obj = {
-  1:'增加',
-  2:'删除',
-  3:'编辑',
+function test(type) {
+  if (type === 'jpg' || type === 'png' || type === 'gif' || type === 'svg') {
+    console.log("该文件为图片");
+  }
 }
 
-获取  state = obj[type];
+function test(type) {
+    const imgArr = ['jpg', 'png', 'gif', 'svg']
+    if (imgArr.includes(type)) {
+        console.log("该文件为图片")
+    }
+}
 
 ```
 
