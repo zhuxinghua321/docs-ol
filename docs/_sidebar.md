@@ -9,4 +9,7 @@
 - 工具
 - [tools](/tools/item.md)
 
+- 笔记
+- [微信小程序](/miniprogram/wechart.md)
+
 
