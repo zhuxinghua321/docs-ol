@@ -22,3 +22,14 @@
           flex: 1 !important;
         }
 ```
+
+### ::marker 文字前的符号
+```css
+li::marker {
+  content: '';
+}
+可以配合:hover
+li:hover::marker {
+  content: '';
+}
+```
