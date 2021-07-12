@@ -80,11 +80,12 @@ console.log(list); // ["蛙人", 3]
 
 ### 数组技巧
 
-数组求和 <font style="color:#dd0000">reduce</font>
+数组方法 <font style="color:#dd0000">reduce</font>
 
 ```js
+//求和
 let nums = [1,22,31,4,56]
-let sum = nums.reduce((prev, cur) => prev + cur)
+let sum = nums.reduce((prev, cur) => prev + cur,0)
 ```
 
 数组去重 <font style="color:#dd0000">set</font> es6 利用 new Set 的集合有序列表，不能有重复
@@ -147,4 +148,45 @@ console.log(text); // 暂无
  if(str != null && typeof(str) != undefined && str !=''){
     console.log(str + ' 不为空');
  }
+```
+
+### 判断值类型
+```js
+  function type(params) {
+      return Object.prototype.toString.call(params);
+    } 
+```
+
+### 获取滚动条的滚动距离
+```js
+function getScrollOffset() {
+    if (window.pageXOffset) {
+        return {
+            x: window.pageXOffset,
+            y: window.pageYOffset
+        }
+    } else {
+        return {
+            x: document.body.scrollLeft + document.documentElement.scrollLeft,
+            y: document.body.scrollTop + document.documentElement.scrollTop
+        }
+    }
+}
+```
+### 获取浏览器地址参数
+```js
+function getWindonHrefParams() {
+      var sHref = window.location.href;
+      var args = sHref.split('?');
+      if (args[0] === sHref) {
+        return '';
+      }
+      var hrefarr = args[1].split('#')[0].split('&');
+      var obj = {};
+      for (var i = 0; i < hrefarr.length; i++) {
+        hrefarr[i] = hrefarr[i].split('=');
+        obj[hrefarr[i][0]] = hrefarr[i][1];
+      }
+      return obj;
+    }
 ```
