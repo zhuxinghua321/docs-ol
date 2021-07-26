@@ -5,6 +5,7 @@
   - [javascritp](/study/js.md)
   - [node.js](/study/node.md)
   - [css](/study/css.md)
+  - [vuex](/study/vuex.md)
 
 - 工具
 - [tools](/tools/item.md)
